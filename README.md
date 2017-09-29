@@ -1,7 +1,6 @@
 # contacts-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Simple contacts application example using Ember and Firebase
 
 ## Prerequisites
 
@@ -14,13 +13,13 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd contacts-app`
-* `npm install`
+* `git clone https://github.com/gecruz/ember-contacts-app.git`
+* `cd ember-contacts-app`
+* `npm i`
 
 ## Running / Development
 
-* `ember serve`
+* `ember s`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ### Code Generators
@@ -29,17 +28,20 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Running Tests
 
-* `ember test`
-* `ember test --server`
+* `ember t`
+* `ember t -s`
 
 ### Building
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+* `ember b` (development)
+* `ember b -prod` (production)
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+* `npm install -g surge`
+* `ember build --environment=development`
+* `mv dist/index.html dist/200.html`
+* `surge dist your-project-name.surge.sh`
 
 ## Further Reading / Useful Links
 
